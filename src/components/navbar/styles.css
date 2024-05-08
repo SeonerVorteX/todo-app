@@ -1,7 +1,7 @@
 .nav-heading h3 {
   font-size: 1.5rem;
   font-weight: var(--w-sb);
-  color: var(--color);
+  color: var(--white);
   margin: 0;
   padding: 0;
 }
@@ -11,31 +11,7 @@
   gap: 1rem;
 }
 
-.nav-end .theme {
-  display: flex;
-  align-items: center;
-}
-
 .nav-end .buttons {
   display: flex;
   gap: 0.5rem;
-}
-
-.theme .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 50%;
-}
-
-.theme i {
-  font-size: 1.4rem;
-  color: var(--color);
-}
-
-.theme .icon:hover {
-  cursor: pointer;
-  background-color: var(--tertiary);
 }

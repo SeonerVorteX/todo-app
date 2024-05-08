@@ -14,11 +14,13 @@
   --w-b: 700;
 
   /* Colors */
-  --color: #000;
-  --background: #fff9d0;
-  --primary: #5ab2ff;
-  --secondary: #a0deff;
-  --tertiary: #caf4ff;
+  --black: hsl(221, 61%, 12%);
+  --white: #fff;
+  --background: #142850;
+  --primary: #00a8cc;
+  --secondary: #0c7b93;
+  --tertiary: #27496d;
+  --input-bg: #335074;
 
   --warning: #fbc02d;
   --error: #e53835;
@@ -31,33 +33,6 @@
   --small: 340px;
   --medium: 768px;
   --large: 1200px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Colors */
-    --black: hsl(221, 61%, 12%);
-    --color: #fff;
-    --background: #142850;
-    --primary: #00a8cc;
-    --secondary: #0c7b93;
-    --tertiary: #27496d;
-    --input-bg: #335074;
-  }
-}
-
-/* [data-theme="dark"] {
-  --color: #fff;
-  --background: #142850;
-  --primary: #00a8cc;
-  --secondary: #0c7b93;
-  --tertiary: #27496d;
-} */
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 * {
@@ -105,15 +80,15 @@ a {
 }
 
 .primary-btn {
-  color: var(--color);
+  color: var(--white);
   background-color: var(--primary);
 }
 
 .secondary-btn {
-  color: var(--color);
+  color: var(--white);
   border: 1px solid var(--primary);
 }
 
 .tertiary-btn {
-  color: var(--color);
+  color: var(--white);
 }

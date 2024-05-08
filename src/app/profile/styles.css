@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: var(--tertiary);
+}
+
+.profile h1 {
+  color: var(--white);
+  text-align: center;
+}
+
+.profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile .profile-info p {
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: var(--w-m);
+}
+
+.profile .profile-info span {
+  color: var(--primary);
+  font-weight: var(--w-b);
+}

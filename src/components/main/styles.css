@@ -9,12 +9,12 @@ main .container.noauth {
 main h2 {
   font-size: 2rem;
   font-weight: var(--w-sb);
-  color: var(--color);
+  color: var(--white);
 }
 
 main p {
   font-size: 1.2rem;
   font-weight: var(--w-m);
-  color: var(--color);
+  color: var(--white);
   opacity: 0.7;
 }

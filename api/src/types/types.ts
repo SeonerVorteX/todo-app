@@ -2,7 +2,6 @@ import { ObjectId } from "mongoose";
 import { Logger } from "winston";
 
 export interface RequestIdentity {
-    type: 0 | 1;
     user: UserType;
 }
 

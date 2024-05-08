@@ -3,7 +3,6 @@
 import "./styles.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -58,17 +57,14 @@ export default () => {
       </div>
 
       <div className="nav-end">
-        <div className="theme">
-          <ThemeSwitcher />
-        </div>
         {isAuthenticated ? (
           <div className="buttons">
             <a className="btn tertiary-btn" onClick={logout}>
               <i className="fa-solid fa-right-from-bracket"></i> Logout
             </a>
-            <h3 className="btn primary-btn">
+            <Link className="btn primary-btn" href="/profile">
               <i className="fa-solid fa-user"></i> Profile
-            </h3>
+            </Link>
           </div>
         ) : (
           <div className="buttons">

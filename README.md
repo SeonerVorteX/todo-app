@@ -30,10 +30,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Note:
-
-Project is still in development. This is the first version of the project. I will add more features and functions in the future.
-
 ## Features
 
 - User authentication
