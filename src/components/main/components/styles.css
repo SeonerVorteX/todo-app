@@ -1,0 +1,154 @@
+main .container.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.app .search {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.search .search-bar {
+  width: 100%;
+  padding: 0.8rem 3rem 0.8rem 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--white);
+  background-color: var(--tertiary);
+  color: var(--color);
+  font-size: 1.2rem;
+}
+
+.search i {
+  font-size: 1.5rem;
+  color: var(--WHITE);
+  position: absolute;
+  top: 25%;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.app .todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+}
+
+.app .todos .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 0.6rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--tertiary);
+  color: var(--color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.todos .create {
+  background-color: transparent !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: default !important;
+}
+
+.create .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create i {
+  font-size: 5rem;
+  color: var(--color);
+}
+
+.create .icon:hover {
+  background-color: var(--tertiary);
+  color: var(--color);
+}
+
+.app .todos .todo:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.81);
+}
+
+.todo .content h3 {
+  font-size: 1.5rem;
+  font-weight: var(--w-sb);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.todo .content .todo-title.editing {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  word-wrap: unset;
+  max-height: 4rem;
+  border: 3px solid var(--secondary);
+}
+
+.todo .content .todo-content {
+  max-height: 210px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.todo .content .todo-content.editing {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 3px solid var(--secondary);
+  min-height: 4rem;
+}
+
+.todo .content .todo-content::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.todo .content p {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: var(--w-m);
+  opacity: 0.8;
+}
+
+.todo .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.todo .buttons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.todo .buttons .disable {
+  color: var(--disabled-success) !important;
+  cursor: not-allowed;
+}
+
+.todo .buttons .delete {
+  color: var(--error);
+}
+
+.todo .buttons .edit {
+  color: var(--warning);
+}
+
+.todo .buttons .save {
+  color: var(--success);
+}

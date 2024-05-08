@@ -1,0 +1,20 @@
+main .container.noauth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: var(--w-sb);
+  color: var(--color);
+}
+
+main p {
+  font-size: 1.2rem;
+  font-weight: var(--w-m);
+  color: var(--color);
+  opacity: 0.7;
+}
