@@ -1,5 +1,7 @@
 # Simple Todo Application
 
+![Simple Todo Application](public/preview/preview.png)
+
 This is a simple todo application. The frontend is built with Next.js. The backend is built with Express.js and MongoDB. Whole application is written in TypeScript.
 
 ## Getting Started
