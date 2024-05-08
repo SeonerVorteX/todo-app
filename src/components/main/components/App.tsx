@@ -1,7 +1,7 @@
 import { SyntheticEvent, useEffect, useState } from "react";
 import "./styles.css";
 import TodoCard from "./TodoCard";
-import { Todo, TodoManager } from "@/Managers/TodoManager";
+import { Todo, TodoManager } from "@/managers/TodoManager";
 
 export default () => {
   const [todos, setTodos] = useState<Todo[]>([]);

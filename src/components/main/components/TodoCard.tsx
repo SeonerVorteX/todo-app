@@ -1,4 +1,4 @@
-import { TodoManager } from "@/Managers/TodoManager";
+import { TodoManager } from "@/managers/TodoManager";
 import "./styles.css";
 import { SyntheticEvent, useEffect, useState } from "react";
 

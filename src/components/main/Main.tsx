@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import App from "./components/App";
 import "./styles.css";
-import { set } from "mongoose";
 
 export default () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
